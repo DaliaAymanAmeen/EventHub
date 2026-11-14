@@ -1,5 +1,7 @@
 # EventHub — QA Automation (US-114: Book tickets)
 
+![Tests](https://github.com/DaliaAymanAmeen/eventhub-qa-automation/actions/workflows/tests.yml/badge.svg)
+
 UI and API test automation for the EventHub ticket-booking flow, built with
 **Playwright for Python** and **pytest**.
 
@@ -14,6 +16,13 @@ UI and API test automation for the EventHub ticket-booking flow, built with
 
 ## How to run
 
+### CI
+
+GitHub Actions runs the full suite on every push and pull request
+([`.github/workflows/tests.yml`](.github/workflows/tests.yml)). The HTML report and
+any failure traces are attached to each run as the `test-report` artifact.
+
+### Locally
 **Prerequisites:** Python 3.10+ and Git.
 
 ```bash
@@ -176,7 +185,6 @@ cancel), so the suite stays quick and reliable.
 
 ## With more time
 
-- **CI:** a GitHub Actions workflow running the suite on every push
 - **More negative scenarios**, for example:
   - booking with an expired token
   - wrong data types (quantity as text, decimal quantity like `2.5`)
