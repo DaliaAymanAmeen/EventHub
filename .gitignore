@@ -1,0 +1,13 @@
+# Secrets — never commit
+###  You have pushed your .env file ###
+#.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Test outputs (regenerated every run)
+.pytest_cache/
+test-results/
+reports/
