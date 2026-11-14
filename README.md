@@ -1,7 +1,5 @@
 # EventHub — QA Automation (US-114: Book tickets)
 
-![Tests](https://github.com/DaliaAymanAmeen/eventhub-qa-automation/actions/workflows/tests.yml/badge.svg)
-
 UI and API test automation for the EventHub ticket-booking flow, built with
 **Playwright for Python** and **pytest**.
 
